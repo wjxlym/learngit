@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-   private products: Array<Product>;
+   protected products: Array<Product>;
 
 
   constructor() { }
