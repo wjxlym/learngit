@@ -1,4 +1,11 @@
-<div *ngFor="let product of products" class="col-lg-4 col-sm-4 col-md-4">
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group">
+      <input class="form-control" [formControl]="titleFilter" type="text" placeholder="请输入过滤内容">
+    </div>
+  </div>
+</div>
+<div *ngFor="let product of products | filter:'title':keyword" class="col-lg-4 col-sm-4 col-md-4">
   <div class="thumbnail">
     <img src="http://placehold.it/320x150">
     <div class="caption">
